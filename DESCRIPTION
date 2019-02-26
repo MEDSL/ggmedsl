@@ -1,12 +1,15 @@
 Package: ggmedsl
-Title: What the Package Does (One Line, Title Case)
+Title: Create ggplot2 Graphics Using MEDSL Colors and Branding.
 Version: 0.0.1
 Authors@R: 
     person(given = "Cameron",
            family = "Wimpy",
            role = c("aut", "cre"),
            email = "wimpy@mit.edu")
-Description: What the package does (one paragraph).
+Description: This package simplifies the creation of ggplot2 graphics using MEDSL branding and colors.
+Imports:
+    ggplot2,
+    scales
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
