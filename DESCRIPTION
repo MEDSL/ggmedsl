@@ -1,0 +1,13 @@
+Package: ggmedsl
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.1
+Authors@R: 
+    person(given = "Cameron",
+           family = "Wimpy",
+           role = c("aut", "cre"),
+           email = "wimpy@mit.edu")
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
