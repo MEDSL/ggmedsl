@@ -3,45 +3,31 @@
 
 # ggmedsl
 
-The goal of ggmedsl is to …
+The goal of `ggmedsl` is to make the creation of MEDSL-themed plots
+seamless using `ggplot2` and a few functions.
 
 ## Installation
 
-You can install the released version of ggmedsl from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the latest version of `ggmedsl` from GitHub using
+`devtools`:
 
 ``` r
-install.packages("ggmedsl")
+devtools::install_github("medsl/ggmedsl")
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+The first function within `ggmedsl` is `medsl_plot`. This quickly
+formats a `ggplot2` object to render in MEDSL formatting.
 
 ``` r
-## basic example code
+mtcars %>% 
+  ggplot(aes(mpg, disp, color=factor(carb))) +
+  geom_point(size=3) +
+  medsl_plot()
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+<img src="man/figures/README-example 1-1.png" width="100%" />
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub\!
+I have also created a number of color scales that follow the MEDSL color
+theme, `scale_color_medsl()`:
