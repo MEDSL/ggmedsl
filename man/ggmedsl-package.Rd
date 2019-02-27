@@ -6,6 +6,8 @@
 \alias{ggmedsl-package}
 \title{ggmedsl: Create ggplot2 Graphics Using MEDSL Colors and Branding}
 \description{
+\if{html}{\figure{logo.png}{options: align='right'}}
+
 This package helps you create ggplot2 graphics Using MEDSL colors and branding.
 }
 \author{

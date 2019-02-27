@@ -32,9 +32,18 @@ theme, `scale_color_medsl()`:
 
 ``` r
 mtcars %>% 
-  ggplot(aes(mpg, disp, color=factor(carb))) +
+  ggplot(aes(mpg, disp, color = factor(carb))) +
   geom_point(size=3) +
   medsl_plot() + scale_color_medsl()
 ```
 
 <img src="man/figures/README-example 2-1.png" width="100%" />
+
+``` r
+mtcars %>% 
+  ggplot(aes(factor(carb), fill = factor(carb))) + 
+  geom_bar() +
+  medsl_plot() + scale_fill_medsl()
+```
+
+<img src="man/figures/README-example 3-1.png" width="100%" />

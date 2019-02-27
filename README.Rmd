@@ -44,8 +44,15 @@ I have also created a number of color scales that follow the MEDSL color theme, 
 
 ```{r example 2}
 mtcars %>% 
-  ggplot(aes(mpg, disp, color=factor(carb))) +
+  ggplot(aes(mpg, disp, color = factor(carb))) +
   geom_point(size=3) +
   medsl_plot() + scale_color_medsl()
+```
+
+```{r example 3}
+mtcars %>% 
+  ggplot(aes(factor(carb), fill = factor(carb))) + 
+  geom_bar() +
+  medsl_plot() + scale_fill_medsl()
 ```
 
