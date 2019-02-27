@@ -1,6 +1,4 @@
 
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
 # ggmedsl
 
 The goal of `ggmedsl` is to make the creation of MEDSL-themed plots
