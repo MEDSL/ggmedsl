@@ -1,7 +1,5 @@
 
-# ggmedsl
-
-[<img src="https://raw.githubusercontent.com/MEDSL/ggmedsl/master/man/figures/ggmedsl.png" height="120"/>](https://github.com/MEDSL/ggmedsl)
+# ggmedsl <img src="man/figures/logo.png" align="right" height=140/>
 
 The goal of `ggmedsl` is to make the creation of MEDSL-themed plots
 seamless using `ggplot2` and a few functions.
@@ -31,3 +29,12 @@ mtcars %>%
 
 I have also created a number of color scales that follow the MEDSL color
 theme, `scale_color_medsl()`:
+
+``` r
+mtcars %>% 
+  ggplot(aes(mpg, disp, color=factor(carb))) +
+  geom_point(size=3) +
+  medsl_plot() + scale_color_medsl()
+```
+
+<img src="man/figures/README-example 2-1.png" width="100%" />

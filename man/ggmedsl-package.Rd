@@ -6,7 +6,7 @@
 \alias{ggmedsl-package}
 \title{ggmedsl: Create ggplot2 Graphics Using MEDSL Colors and Branding}
 \description{
-This package simplifies the creation of ggplot2 graphics using MEDSL branding and colors.
+This package helps you create ggplot2 graphics Using MEDSL colors and branding.
 }
 \author{
 \strong{Maintainer}: Cameron Wimpy \email{wimpy@mit.edu}

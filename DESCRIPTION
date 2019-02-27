@@ -6,11 +6,16 @@ Authors@R:
            family = "Wimpy",
            role = c("aut", "cre"),
            email = "wimpy@mit.edu")
-Description: This package simplifies the creation of ggplot2 graphics using MEDSL branding and colors.
-Depends:
+Description: This package helps you create ggplot2 graphics Using MEDSL colors and branding. 
+Depends: R (>= 3.0.1)
+Imports:
     ggplot2,
     scales
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

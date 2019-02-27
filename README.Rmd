@@ -15,11 +15,9 @@ knitr::opts_chunk$set(
 
 library(tidyverse)
 library(ggmedsl)
-library(badger)
 ```
-# ggmedsl 
 
-[<img src="https://raw.githubusercontent.com/MEDSL/ggmedsl/master/man/figures/ggmedsl.png" height="120"/>](https://github.com/MEDSL/ggmedsl)
+# ggmedsl <img src="man/figures/logo.png" align="right" height=140/>
 
 The goal of `ggmedsl` is to make the creation of MEDSL-themed plots seamless using `ggplot2` and a few functions. 
 
@@ -44,7 +42,7 @@ mtcars %>%
 
 I have also created a number of color scales that follow the MEDSL color theme, `scale_color_medsl()`: 
 
-```{r example 2, eval=FALSE, fig.height=6, fig.width=6, include=FALSE}
+```{r example 2}
 mtcars %>% 
   ggplot(aes(mpg, disp, color=factor(carb))) +
   geom_point(size=3) +

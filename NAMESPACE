@@ -3,3 +3,4 @@
 export(medsl_map)
 export(medsl_plot)
 export(scale_color_medsl)
+import(ggplot2)
