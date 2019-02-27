@@ -1,6 +1,6 @@
 Package: ggmedsl
 Title: Create ggplot2 Graphics Using MEDSL Colors and Branding
-Version: 0.0.1
+Version: 1.0.1
 Authors@R: 
     person(given = "Cameron",
            family = "Wimpy",
