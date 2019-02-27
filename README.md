@@ -22,8 +22,8 @@ formats a `ggplot2` object to render in MEDSL formatting.
 
 ``` r
 mtcars %>% 
-  ggplot(aes(mpg, disp, color=factor(carb))) +
-  geom_point(size=3) +
+  ggplot(aes(mpg, disp, color = factor(carb))) +
+  geom_point(size = 3) +
   medsl_plot()
 ```
 
