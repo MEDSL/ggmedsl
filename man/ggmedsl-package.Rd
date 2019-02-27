@@ -4,7 +4,7 @@
 \name{ggmedsl-package}
 \alias{ggmedsl}
 \alias{ggmedsl-package}
-\title{ggmedsl: Create ggplot2 Graphics Using MEDSL Colors and Branding.}
+\title{ggmedsl: Create ggplot2 Graphics Using MEDSL Colors and Branding}
 \description{
 This package simplifies the creation of ggplot2 graphics using MEDSL branding and colors.
 }
