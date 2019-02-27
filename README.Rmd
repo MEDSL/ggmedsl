@@ -33,7 +33,7 @@ devtools::install_github("medsl/ggmedsl")
 
 The first function within `ggmedsl` is `medsl_plot`. This quickly formats a `ggplot2` object to render in MEDSL formatting. 
 
-```{r example 1, fig.height=6, fig.width=6}
+```{r example-1, fig.height=6, fig.width=6}
 mtcars %>% 
   ggplot(aes(mpg, disp, color = factor(carb))) +
   geom_point(size = 3) +
@@ -42,14 +42,14 @@ mtcars %>%
 
 I have also created a number of color scales that follow the MEDSL color theme, `scale_color_medsl()`: 
 
-```{r example 2}
+```{r example-2}
 mtcars %>% 
   ggplot(aes(mpg, disp, color = factor(carb))) +
   geom_point(size=3) +
   medsl_plot() + scale_color_medsl()
 ```
 
-```{r example 3}
+```{r example-3}
 mtcars %>% 
   ggplot(aes(factor(carb), fill = factor(carb))) + 
   geom_bar() +

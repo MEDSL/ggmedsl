@@ -25,7 +25,7 @@ mtcars %>%
   medsl_plot()
 ```
 
-<img src="man/figures/README-example 1-1.png" width="100%" />
+<img src="man/figures/README-example-1-1.png" width="100%" />
 
 I have also created a number of color scales that follow the MEDSL color
 theme, `scale_color_medsl()`:
@@ -37,7 +37,7 @@ mtcars %>%
   medsl_plot() + scale_color_medsl()
 ```
 
-<img src="man/figures/README-example 2-1.png" width="100%" />
+<img src="man/figures/README-example-2-1.png" width="100%" />
 
 ``` r
 mtcars %>% 
@@ -46,4 +46,4 @@ mtcars %>%
   medsl_plot() + scale_fill_medsl()
 ```
 
-<img src="man/figures/README-example 3-1.png" width="100%" />
+<img src="man/figures/README-example-3-1.png" width="100%" />

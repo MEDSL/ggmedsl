@@ -10,9 +10,11 @@ scale_color_medsl()
 This function allows you to add the MEDSL colors to your ggplot graphs.
 }
 \examples{
-ggplot(mtcars, aes(mpg, disp, color = factor(carb))) +
-geom_point(size = 3) +
+\dontrun{
+ggplot(mtcars, aes(factor(carb), fill = factor(carb))) +
+geom_bar() +
 ggmedsl() +
 scale_color_medsl()
+}
 }
 \keyword{scale_color_medsl}

@@ -10,10 +10,12 @@ medsl_plot()
 This function allows you to add the MEDSL theme to your ggplot graphs.
 }
 \examples{
-library(ggplot2)
+\dontrun{
+ggplot(mtcars, aes(mpg, disp, color = factor(carb))) +
+geom_point(size = 3) +
+ggmedsl() +
+scale_fill_medsl()
+}
 
-ggplot2::ggplot(mtcars, aes(mpg, disp, color=factor(carb))) +
-geom_point(size=3) +
-medsl_plot()
 }
 \keyword{medsl_plot}

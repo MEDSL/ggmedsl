@@ -10,6 +10,13 @@
 
 This package helps you create ggplot2 graphics Using MEDSL colors and branding.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/medsl/ggmedsl}
+}
+
+}
 \author{
 \strong{Maintainer}: Cameron Wimpy \email{wimpy@mit.edu}
 

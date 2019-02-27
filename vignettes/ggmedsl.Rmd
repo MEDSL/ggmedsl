@@ -2,12 +2,15 @@
 title: "ggmedsl: Adding MEDSL Branding to ggplot2 Plot Objects"
 author: "Cameron Wimpy"
 date: "`r Sys.Date()`"
-output: 
+output:  
   html_document:
     toc: true
     toc_depth: 4
     toc_float: true
-    theme: spacelab 
+vignette: >
+  %\VignetteEngine{knitr::knitr}
+  %\VignetteIndexEntry{Title of your vignette}
+  %\usepackage[UTF-8]{inputenc}
 ---
 
 ```{r setup, include = FALSE}
@@ -16,57 +19,11 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 
-pacman::p_load('dplyr', 'tidyr',
-               'ggplot2',  'ggalt',
-               'forcats', 'R.utils', 'png', 
-               'grid', 'ggpubr', 'scales',
-               'ggmedsl', 'knitr', 'prettydoc')
+library(ggplot2)
+library(ggmedsl)
 ```
 
-Vignettes are long form documentation commonly included in packages. Because they are part of the distribution of the package, they need to be as compact as possible. The `html_vignette` output type provides a custom style sheet (and tweaks some options) to ensure that the resulting html is as small as possible. The `html_vignette` format:
+# ggmedsl <img src="../man/figures/logo_small.png" align="right" height=120/>
 
-- Never uses retina figures
-- Has a smaller default figure size
-- Uses a custom CSS stylesheet instead of the default Twitter Bootstrap style
+This package provides a series of functions that simplifies theming a `ggplot2` plot or map object for [MEDSL](http://electionlab.mit.edu) branding and colors. There are two primary functions, `medsl_plot()` and `medsl_map()` that can be added to a plot object in order to generate the MEDSL theme. `medsl_spiff()` finishes out the plot and there are a series of scales that fill in the MEDSL colors. In this vignette I demonstrate how the package and various functions work.
 
-## Vignette Info
-
-Note the various macros within the `vignette` section of the metadata block above. These are required in order to instruct R how to build the vignette. Note that you should change the `title` field and the `\VignetteIndexEntry` to match the title of your vignette.
-
-## Styles
-
-The `html_vignette` template includes a basic CSS theme. To override this theme you can specify your own CSS in the document metadata as follows:
-
-    output: 
-      rmarkdown::html_vignette:
-        css: mystyles.css
-
-## Figures
-
-The figure sizes have been customised so that you can easily put two images side-by-side. 
-
-```{r, fig.show='hold'}
-plot(1:10)
-plot(10:1)
-```
-
-You can enable figure captions by `fig_caption: yes` in YAML:
-
-    output:
-      rmarkdown::html_vignette:
-        fig_caption: yes
-
-Then you can use the chunk option `fig.cap = "Your figure caption."` in **knitr**.
-
-## More Examples
-
-You can write math expressions, e.g. $Y = X\beta + \epsilon$, footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
-
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(mtcars, 10))
-```
-
-Also a quote using `>`:
-
-> "He who gives up [code] safety for [code] speed deserves neither."
-([via](https://twitter.com/hadleywickham/status/504368538874703872))
