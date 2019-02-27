@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "wimpy@mit.edu")
 Description: This package simplifies the creation of ggplot2 graphics using MEDSL branding and colors.
-Imports:
+Depends:
     ggplot2,
     scales
 License: MIT + file LICENSE

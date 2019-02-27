@@ -1,5 +1,6 @@
 ---
 output: github_document
+html_preview: false
 ---
 
 ```{r setup, include = FALSE}
@@ -14,8 +15,11 @@ knitr::opts_chunk$set(
 
 library(tidyverse)
 library(ggmedsl)
+library(badger)
 ```
-# ggmedsl
+# ggmedsl 
+
+[<img src="https://raw.githubusercontent.com/MEDSL/ggmedsl/master/ggmedsl.png" height="120"/>](https://github.com/MEDSL/ggmedsl)
 
 The goal of `ggmedsl` is to make the creation of MEDSL-themed plots seamless using `ggplot2` and a few functions. 
 

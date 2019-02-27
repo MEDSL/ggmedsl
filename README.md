@@ -1,6 +1,8 @@
 
 # ggmedsl
 
+[<img src="https://raw.githubusercontent.com/MEDSL/ggmedsl/master/ggmedsl.png" height="120"/>](https://github.com/MEDSL/ggmedsl)
+
 The goal of `ggmedsl` is to make the creation of MEDSL-themed plots
 seamless using `ggplot2` and a few functions.
 

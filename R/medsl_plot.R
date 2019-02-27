@@ -11,7 +11,6 @@
 
 medsl_plot <- function() {
   font <- "Helvetica"
-
   ggplot2::theme(
     plot.title = ggplot2::element_text(family = font,
                                        size = 18,
