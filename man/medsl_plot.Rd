@@ -13,7 +13,8 @@ This function allows you to add the MEDSL theme to your ggplot graphs.
 \dontrun{
 ggplot(mtcars, aes(mpg, disp, color = factor(carb))) +
 geom_point(size = 3) +
-medsl_plot() +
+ggmedsl() +
+scale_fill_medsl()
 }
 
 }

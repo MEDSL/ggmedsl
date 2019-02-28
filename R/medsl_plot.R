@@ -8,7 +8,8 @@
 #' \dontrun{
 #' ggplot(mtcars, aes(mpg, disp, color = factor(carb))) +
 #' geom_point(size = 3) +
-#' medsl_plot() +
+#' ggmedsl() +
+#' scale_fill_medsl()
 #' }
 #'
 medsl_plot <- function() {
